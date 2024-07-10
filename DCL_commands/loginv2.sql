@@ -1,0 +1,9 @@
+USE master;
+GO
+CREATE LOGIN python2 WITH PASSWORD = 'mudar@123' , CHECK_POLICY = OFF;
+GO
+
+USE master;
+GO
+ALTER SERVER ROLE sysadmin ADD MEMBER python2;
+GO
